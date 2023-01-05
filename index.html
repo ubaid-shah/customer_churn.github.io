@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Churn Prediction</title>
+</head>
+<body bgcolor=#17a589>
+<center><H1>Bank Churn Prediction</H1>
+    <img src="static/bank churn.jpg" alt="bank_churn" width="600" height="268">
+    <br>
+    <br>
+    <h2>Enter the details of the customer below</h2>
+    <br>
+
+
+        <form method="POST" , action='/predict'>
+        <b>
+            CreditScore: <input type="number" , name="CreditScore", placeholder="CreditScore in int" /><br><br>
+            Age: <input type="number", name="Age", placeholder="Age in int" /><br><br>
+            Tenure: <input type="number", name="Tenure", placeholder="Tenure in int" /><br><br>
+            Balance: <input type="number", step="any" , name="Balance", placeholder="Balance in float" /><br><br>
+            NumOfProducts: <input type="number", name="NumOfProducts", placeholder="No of products in int" /><br><br>
+            HasCrCard: <input type="number", name="HasCrCard", placeholder="1:Yes/0:No" /><br><br>
+            IsActiveMember: <input type="number", name="IsActiveMember", placeholder="1:Yes/0:No" /><br><br>
+            EstimatedSalary: <input type="number", step="any", name="EstimatedSalary", placeholder="Salary in float" /><br><br>
+            Female: <input type="number", name="Female", placeholder="1:Yes/0:No" /><br><br>
+            Male: <input type="number", name="Male", placeholder="1:Yes/0:No" /><br><br></b>
+        <input type="submit", value='predict!' /> </form> <br><br>
+
+
+
+</center>
+
+
+
+
+
+</body>
+</html>
